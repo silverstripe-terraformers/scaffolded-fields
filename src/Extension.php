@@ -14,7 +14,7 @@ use SilverStripe\ORM\DataObject;
  * there are various options on how to remove scaffolded fields
  *
  * Note that this extension needs to be applied manually and order matters
- * you want to apply this extension after all scaffolded fields are present nut before your model level
+ * you want to apply this extension after all scaffolded fields are present not before your model level
  * fields customisation
  *
  * example config
@@ -27,8 +27,8 @@ use SilverStripe\ORM\DataObject;
  *          property: db
  *          type: keep
  *          fields:
- *            Title: true
- *            ShowTitle: true
+ *            Title
+ *            ShowTitle
  *        - # remove all has_one fields
  *          property: has_one
  *          type: keep
@@ -36,13 +36,13 @@ use SilverStripe\ORM\DataObject;
  *          property: many_many
  *          type: remove
  *          fields:
- *            LinkTracking: true
- *            FileTracking: true
- *            BackLinkTracking: true
+ *            LinkTracking
+ *            FileTracking
+ *            BackLinkTracking
  *        - # remove Settings field (not part of any static property)
  *          property: extra
  *          fields:
- *            Settings: true
+ *            Settings
  *
  * @property DataObject $owner
  * @package Terraformers\ScaffoldedFields
