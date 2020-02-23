@@ -1,0 +1,9 @@
+Terraformers\ScaffoldedFields\Tests\Entrance:
+  entrance1:
+    Title: Entrance1
+
+Terraformers\ScaffoldedFields\Tests\House:
+  house1:
+    Title: House1
+    Address: Address1
+    EntranceID: =>Terraformers\ScaffoldedFields\Tests\Entrance.entrance1
