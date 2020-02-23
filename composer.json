@@ -1,0 +1,48 @@
+{
+    "name": "terraformers/scaffolded-fields",
+    "description": "Configure which scaffolded fields are kept and which are removed.",
+    "type": "silverstripe-vendormodule",
+    "keywords": [
+        "silverstripe",
+        "CMS"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "SilverStripe Ltd"
+        },
+        {
+            "name": "Silverstripe Terraformers",
+            "email": "terraformers@silverstripe.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/silverstripe-terraformers/scaffolded-fields/issues"
+    },
+    "require": {
+        "php": "^7.1",
+        "silverstripe/vendor-plugin": "^1.0",
+        "silverstripe/framework": "^4.0",
+        "silverstripe/admin": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7",
+        "squizlabs/php_codesniffer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Terraformers\\ScaffoldedFields\\": "src/",
+            "Terraformers\\ScaffoldedFields\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "expose": [
+            "client/dist"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
